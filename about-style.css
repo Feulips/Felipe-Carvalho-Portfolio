@@ -1,0 +1,262 @@
+/*estilo geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Story Script", cursive;
+    color: white;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+html{
+    height: 100%;
+    margin: 0;
+}
+
+.menu-desktop{
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    left: -100px;
+}
+
+/* Estilo do cabeçalho */
+
+header{
+    padding: 12px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color:aqua;
+    transform: scale(1.2);
+}
+
+header nav{
+    list-style-type:none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:  20px;
+}
+
+.logo img {
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    position: relative;
+    right: -3vh;
+    
+}
+
+.logo img:hover {
+    transform: scale(1.3); 
+}
+
+#contato{
+    font-size:20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+
+}
+
+.circle2:hover{
+transform: scale(1.3);  
+}
+
+.circle2 {
+position: relative;
+width: 50px;
+height: 50px;
+border-radius: 60%;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid white;
+overflow: visible;
+left: -25vh;
+background: transparent;
+transition: transform 0.3s ease; 
+}
+
+/*Main*/
+
+main {
+padding: 4rem 2rem;
+margin-top: 100px;
+flex: 1;
+}
+
+.me {
+    display: flex;
+    align-items: center; 
+    gap: 4rem;           
+    flex-wrap: wrap;     
+}
+
+.image {
+    flex: 1 1 300px; 
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    flex: 2 1 400px; 
+}
+
+#normal {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+#apresentação{
+    font-family: "Poppins", "Poppins Placeholder", sans-serif,cursive;
+    font-size: 24px;
+    position: relative;
+    left: 3px;
+    top: -20px;
+    letter-spacing: -1px;
+}
+
+#title{
+    font-family: "Poppins", "Poppins Placeholder", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color:aqua;
+    margin: 0;
+}
+
+#normal{
+    font-family: "Poppins", "Poppins Placeholder", sans-serif;
+    font-size: 40px;
+    text-align: 0;
+    color: whitesmoke;
+    margin-top: -30vh;
+}
+#textphrs{
+    color: aqua;
+}
+
+
+.destaque{
+    color: aqua;
+}
+.destaque2{
+    color: greenyellow;
+}
+.destaque3{
+    color: yellow;
+}
+
+
+@keyframes pulsar-circulo {
+0%, 100% { transform: scale(0.9); }
+50% { transform: scale(1); }
+}
+
+@keyframes pulsar-img {
+0%, 100% { transform: scale(0.9); }
+50% { transform: scale(1); }
+}
+
+.circle {
+position: relative;
+width: 400px;
+height: 600px;
+border-radius: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+animation: pulsar-circulo 8s ease-in-out infinite;
+border: 1px solid aqua;
+overflow: hidden;
+left: 0vh;
+bottom: 10vh;
+}
+
+.profile-pic {
+width: 300px;
+height: 750px;
+border-radius: 0;
+object-fit: cover;
+border: 2px solid black;
+animation: pulsar-img 8s ease-in-out infinite;
+}
+
+/* Footer geral */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Container com flexbox */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cada bloco dentro do footer */
+.footer-container div {
+    flex: 1;
+    min-width: 200px; /* garante responsividade */
+    margin: 10px;
+}
+
+/* Títulos do footer */
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Links das redes sociais */
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: aqua;
+}
+
+/* Copyright */
+.footer-copy {
+    font-size: 0.8rem;
+    margin-top: 15px;
+    color: #aaa;
+}
