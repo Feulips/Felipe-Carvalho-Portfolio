@@ -111,7 +111,9 @@
         <!-- CONTATO -->
         <section id="section-contato">
             <h1 id="Title">FALA <span class="destaque">COMIGO!</span></h1>
-            <form onsubmit="alert('Obrigado por assinar o plano! Este site é apenas um protótipo.'); return false;">
+            <form name="contato" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contato">
+
                 <table>
                     <tr>
                         <td>
@@ -119,13 +121,13 @@
                             <input type="email" name="email" id="email" placeholder="Seu E-mail:" required><br>
                             <input type="tel" name="number" id="number" placeholder="Seu celular:" required><br>
                             <textarea name="message" id="message" placeholder="Sua mensagem:" rows="6" cols="50"></textarea><br>
-
-                        </td> 
+                        </td>
                     </tr>
                 </table>
                 <button class="btn secondary" type="submit">Enviar</button>
             </form>
-        </section>
+</section>
+
     </main>
 
     <footer>
