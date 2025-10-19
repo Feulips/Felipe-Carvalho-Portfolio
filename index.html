@@ -5,55 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <!--codigo do google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--final do codigo do google fonts-->
 
-<!--codigo icons-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-<!--final do codigo do icons-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <title>Felipe Carvalho | Portfólio</title>
     <link rel="icon" href="images/Logotipo.png" type="image/png">
-
 </head>
 <body>
     <header>
         <div class="interface">
             <div class="logo">
-                    <a href="index.html"><img src="images/Logotipo.png" alt="Logo do site" width="60px" height="60px"></a>
-            </div><!--Logo-->
-
-                <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="index.html"><span class="destaque">INICIO</span></a></li>
-                        <li><a href="specialty.html">ESPECIALIDADE</a></li>
-                        <li><a href="about.html">SOBRE</a></li>
-                        <li><a href="#">PROJETOS</a></li>
-                    </ul>
-                </nav>
-
-
-                <a href="page-contact.html" class="circle2">
-                    <i id="contato" class="bi bi-chat-square"></i>
-                </a>
-
-        </div><!--Interface-->
-
-    </header>
-    <main>
-        <section class="me">
-            <div class="text"> 
-                <h1 id="apresentação">Olá, sou o Felipe Carvalho👋🏻</h1>
-                <h2 id="title">Desenvolvedor</h2>
-                <h2 id="subtitle" ><span class="destaque3">Front</span>end</h2>
-                <p>Sou um <span class="destaque">Desenvolvedor Frontend</span> no <span class="destaque2">Brasil</span> e vou ajudar você a criar sites incríveis que seus usuários vão adorar.</p>
-
-            <div class="buttons">
-                <a href="page-contact.html" class="btn primary">Entre em Contato! </a>
-                <a href="" class="btn secondary">Conheça Meus <u id="project">Projetos</u></a>
+                <a href="#section-inicio"><img src="images/Logotipo.png" alt="Logo do site" width="60px" height="60px"></a>
             </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#section-inicio"><span class="destaque">INÍCIO</span></a></li>
+                    <li><a href="#section-especialidades">ESPECIALIDADE</a></li>
+                    <li><a href="#section-sobre">SOBRE</a></li>
+                    <li><a href="#section-projetos">PROJETOS</a></li>
+                    <li><a href="#section-contato">CONTATO</a></li>
+                </ul>
+            </nav>
+
+            <a href="#section-contato" class="circle2">
+                <i id="contato" class="bi bi-chat-square"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- INÍCIO -->
+        <section id="section-inicio" class="me">
+            <div class="text"> 
+                <h1 id="apresentacao">Olá, sou o Felipe Carvalho 👋🏻</h1>
+                <h2 id="title">Desenvolvedor</h2>
+                <h2 id="subtitle"><span class="destaque3">Front</span>End</h2>
+                <p>Sou um <span class="destaque">Desenvolvedor FrontEnd</span> no <span class="destaque2">Brasil</span> e vou ajudar você a criar sites incríveis que seus usuários vão adorar.</p>
+
+                <div class="buttons">
+                    <a href="#section-contato" class="btn primary">Entre em Contato!</a>
+                    <a href="#section-projetos" class="btn secondary">Conheça Meus <u id="project">Projetos</u></a>
+                </div>
             </div>
 
             <div class="image">
@@ -62,27 +60,93 @@
                 </div>
             </div>
         </section>
+
+        <!-- ESPECIALIDADES -->
+<section id="section-especialidades">
+    <h2>Minhas Especialidades</h2>
+    <div class="skills">
+    <div class="skill">
+        <img src="images/html.png" alt="HTML">
+        <p>HTML</p>
+    </div>
+    <div class="skill">
+        <img src="images/css.png" alt="CSS">
+        <p>CSS</p>
+    </div>
+    <div class="skill">
+        <img src="images/js.png" alt="JavaScript">
+        <p>JavaScript</p>
+    </div>
+    <div class="skill">
+        <img src="images/php.png" alt="PHP">
+        <p>PHP</p>
+    </div>
+    </div>
+</section>
+
+
+        <!-- SOBRE -->
+        <section id="section-sobre" class="sobre">
+            <div class="image">
+                <div class="circle">
+                    <img src="images/me2.png" alt="Felipe Carvalho" class="profile-pic" />
+                </div>
+            </div>
+
+            <div class="text">
+                <h2 id="normal">
+                    MUITO PRAZER,<br>
+                    <span class="destaque">SOU FELIPE HENRIQUE.</span>
+                </h2>
+                <p>
+                    Sou <span class="destaque3">apaixonado por tecnologia</span> e atualmente estudo 
+                    <span class="destaque">Análise e Desenvolvimento de Sistemas.</span><br>
+                    Tenho experiência em <span class="destaque2">programação, banco de dados e desenvolvimento web.</span><br>
+                    Sempre busco aprender mais e <span>criar soluções criativas.</span><br>
+                    Sou curioso, comunicativo e adoro <span class="destaque">transformar ideias em projetos práticos.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="section-contato">
+            <h1 id="Title">FALA <span class="destaque">COMIGO!</span></h1>
+            <form onsubmit="alert('Obrigado por assinar o plano! Este site é apenas um protótipo.'); return false;">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="name" id="name" placeholder="Seu nome completo:" required><br>
+                            <input type="email" name="email" id="email" placeholder="Seu E-mail:" required><br>
+                            <input type="tel" name="number" id="number" placeholder="Seu celular:" required><br>
+                            <textarea name="message" id="message" placeholder="Sua mensagem:" rows="6" cols="50"></textarea><br>
+
+                        </td> 
+                    </tr>
+                </table>
+                <button class="btn secondary" type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-info">
-            <h3>Sobre mim</h3>
-            <p>Apenas um Desenvolvedor</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Sobre mim</h3>
+                <p>Apenas um Desenvolvedor</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>Email: felipehenriquedsc@gmail.com</p>
+                <p>Telefone: (31) 8529-5213</p>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-me</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
         </div>
-        <div class="footer-contact">
-            <h3>Contato</h3>
-            <p>Email:felipehenriquedsc@gmail.com</p>
-            <p>Telefone: (31) 8529-5213</p>
-        </div>
-        <div class="footer-social">
-            <h3>Siga-nos</h3>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
-    </div>
-    <p class="footer-copy">Feito com 🩵 por Felipe Carvalho</p>
-</footer>
+        <p class="footer-copy">Feito com 🩵 por Felipe Carvalho</p>
+    </footer>
 </body>
 </html>
