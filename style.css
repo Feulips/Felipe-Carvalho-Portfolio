@@ -589,11 +589,12 @@ p {
 }
 
 .projeto img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     margin-bottom: 1rem;
     transition: transform 0.3s ease;
+    border-radius:2rem;
 }
 
 .projeto:hover img {
