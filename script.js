@@ -39,4 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('mensagem', mensagem);
 
     });
+
+    const hamburger = document.querySelector('.hamburger');
+const menuDesktop = document.querySelector('.menu-desktop');
+
+hamburger.addEventListener('click', () => {
+    menuDesktop.classList.toggle('active');
+    hamburger.classList.toggle('active');
 });
+});
+

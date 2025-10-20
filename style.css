@@ -152,6 +152,62 @@ header > .interface {
     }
 }
 
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 700px) {
+    .hamburger {
+    display: none; /* padrão: escondido */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: cyan;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+    .menu-desktop {
+        display: none; /* esconde menu desktop */
+    }
+
+    .circle2 {
+        display: none; /* esconde botão de contato */
+    }
+
+    .hamburger {
+        display: flex; /* mostra hambúrguer */
+    }
+    .menu-desktop.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10,10,10,0.95);
+    padding: 20px 0;
+    gap: 15px;
+    align-items: center;
+}
+
+}
+
 /* ======================= */
 /* SEÇÃO INÍCIO */
 /* ======================= */
