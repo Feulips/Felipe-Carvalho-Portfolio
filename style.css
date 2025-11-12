@@ -36,7 +36,7 @@ header {
 }
 
 header.scrolled {
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
@@ -272,9 +272,10 @@ p {
 }
 
 /* ====== TEXTOS EM DESTAQUE ====== */
-.destaque { color: aqua; font-weight: 600; }
-.destaque2 { color: greenyellow; font-weight: 600; }
-.destaque3 { color: yellow; font-weight: 600; }
+.destaque   { color: aqua; font-weight: 600; }
+.destaque2  { color: greenyellow; font-weight: 600; }
+.destaque3  { color: yellow; font-weight: 600; }
+.destaque4  {color: #ff6699;font-weight: 600;}
 
 /* ====== BOTÕES ====== */
 .buttons {
@@ -506,6 +507,16 @@ p {
     .skill p {
         font-size: 1rem;
     }
+}
+
+.descricao-skill {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 700px;
+    margin-inline: auto;
+    transition: opacity 0.3s ease;
 }
 
 /* ======================= */
