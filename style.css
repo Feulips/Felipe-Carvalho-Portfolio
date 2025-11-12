@@ -156,7 +156,7 @@ header > .interface {
 /* ===== RESPONSIVO ===== */
 @media (max-width: 700px) {
     .hamburger {
-    display: none; /* padrão: escondido */
+    display: none; 
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
